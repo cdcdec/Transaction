@@ -1,31 +1,31 @@
 package com.cdc.transaction.model;
 
 /**
- * �û�
+ * 用户
  * @author yangenxiong yangenxiong2009@gmail.com
  * @version  1.0
- * <br/>��վ: <a href="http://www.crazyit.org">���Java����</a>
+ * <br/>网站: <a href="http://www.crazyit.org">疯狂Java联盟</a>
  * <br>Copyright (C), 2009-2010, yangenxiong
  * <br>This program is protected by copyright laws.
  */
 public class User extends ValueObject {
 	
-	//�û�����
+	//用户名称
 	private String USER_NAME;
 	
-	//����
+	//密码
 	private String PASS_WD;
 	
-	//�û���ɫid, ���ݿ��ֶ�
+	//用户角色id, 数据库字段
 	private String ROLE_ID;
 	
-	//�û���ʵ����
+	//用户真实名称
 	private String REAL_NAME;
 	
-	//�Ƿ�ɾ��, 0û�б�ɾ��, 1Ϊ�Ѿ�ɾ��
+	//是否被删除, 0没有被删除, 1为已经删除
 	private String IS_DELETE;
 	
-	//�û���ɫ, �����������ݿ�
+	//用户角色, 不保存在数据库
 	private Role role;
 
 	public String getUSER_NAME() {
